@@ -10,8 +10,16 @@
  *******************************************************************************/
 package invazn;
 
+
 import java.util.Random;
 import javax.swing.ImageIcon;
+
+import powerups.Blaster2;
+import powerups.Blaster3;
+import powerups.Fuel1;
+import powerups.Fuel2;
+import powerups.Fuel3;
+import powerups.Speed;
 
 public class EnemyShip extends Ship
 {

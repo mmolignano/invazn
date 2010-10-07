@@ -8,17 +8,20 @@
  * Contributors:
  *     IBM Corporation - initial API and implementation
  *******************************************************************************/
-package invazn;
+package powerups;
+
+
+import invazn.Powerup;
 
 import javax.swing.*;
 
-public class Fuel2 extends Powerup
+public class Blaster2 extends Powerup
 {
 
-  public Fuel2(int x, int y)
+  public Blaster2(int x, int y)
   {
-    super( x, y, 4 );
-    //setSprite ( new ImageIcon("c:/images/fuel2.gif") );
-    setSprite ( new ImageIcon("images/fuel2.gif") );
+    super( x, y, 1 );
+    //setSprite ( new ImageIcon("c:/images/2.gif"));
+    setSprite ( new ImageIcon("images/2.gif"));
   }
 }

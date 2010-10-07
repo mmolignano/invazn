@@ -8,7 +8,9 @@
  * Contributors:
  *     IBM Corporation - initial API and implementation
  *******************************************************************************/
-package invazn;
+package powerups;
+
+import invazn.Powerup;
 
 import javax.swing.*;
 

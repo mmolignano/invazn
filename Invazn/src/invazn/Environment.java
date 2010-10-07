@@ -13,6 +13,9 @@ package invazn;
 import java.awt.*;
 import java.awt.event.*;
 import javax.swing.*;
+
+import powerups.Fuel3;
+
 import java.util.*;
 
 import sun.audio.*;
