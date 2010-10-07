@@ -1,0 +1,33 @@
+Invazn! v1.0 Instructions
+
+How to Play
+
+The object of Invazn! is to gain as many points as possible. Points are gained by collecting power stars that defeated enemies drop. Also dropped are various powerups that give you points as well as power up your ship. The game will become more difficult as it progresses, as enemies will shoot more often and take more hits before being defeated. Fuel, displayed in a colored meter below the playing area, is lost over time, when you shoot a laser, and when your ship is hit. If your fuel reaches 0, a fuel tank will be lost. When all remaining fuel tanks are depleted, the game ends. The top 10 high scores are saved for both single and multiplayer.
+
+Basic Controls
+
+Player 1 - Use the mouse to move your ship left and right. Left click to shoot.
+Player 2 - Use left and right arrow keys to move. Hold shift to double speed. Use spacebar to shoot.
+
+Powerups
+
+Double Blasters - Ability to shoot two lasers simultaniously. Lasts 15 seconds. Adds 500 points.
+Triple Blasters - Ability to shoot three lasers simultaniously. Lasts 15 seconds. Adds 750 points.
+Half Tank - Adds half a tank of fuel. Adds 500 points.
+Full Tank - Adds a full tank of fuel. Adds 750 points.
+Extra Fuel Tank - Adds a reserve fuel tank. Adds 1000 points.
+Speed - Doubles the velocity of your lasers. Lasts 15 seconds. Adds 500 points.
+Power Star - Adds a small amount of fuel. Adds 100 points to the score.
+
+Enemy Descriptions
+
+Every 60 seconds a new wave of enemies appears. In each progressive wave, enemies require 1 additional hit to defeat and shoot more often. EX: Wave 1 enemies take 1 hits to defeat but wave 3 enemies require 3 hits to defeat.
+
+Tips and Tricks
+
+Avoid wasting shots. They deplete fuel. Accuracy is important for a high score.
+Avoid collisions with enemy ships. This reduces your fuel by half a tank!
+In multiplayer, work cooperatively to last longer and obtain a higher score.
+Click Show Pictures below to display the pictures in Invazn!
+
+Please note that no ships or stars were harmed in the making of Invazn!
