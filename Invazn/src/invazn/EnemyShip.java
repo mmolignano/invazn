@@ -11,15 +11,16 @@
 package invazn;
 
 
+import invazn.powerups.Blaster2;
+import invazn.powerups.Blaster3;
+import invazn.powerups.Fuel1;
+import invazn.powerups.Fuel2;
+import invazn.powerups.Fuel3;
+import invazn.powerups.Speed;
+
 import java.util.Random;
 import javax.swing.ImageIcon;
 
-import powerups.Blaster2;
-import powerups.Blaster3;
-import powerups.Fuel1;
-import powerups.Fuel2;
-import powerups.Fuel3;
-import powerups.Speed;
 
 public class EnemyShip extends Ship
 {
