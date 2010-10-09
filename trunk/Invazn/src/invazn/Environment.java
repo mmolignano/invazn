@@ -19,12 +19,16 @@ import javax.swing.*;
 
 import java.util.*;
 
-import sun.audio.*;
-import java.io.*;
+//import sun.audio.*;
+//import java.io.*;
 
 public class Environment extends JPanel implements MouseListener, MouseMotionListener
 {
-  // Width and Height
+  /**
+	 * 
+	 */
+	private static final long serialVersionUID = 1L;
+// Width and Height
   private static final int HEIGHT = 700;
   private static final int WIDTH = 900;
 
@@ -45,21 +49,21 @@ public class Environment extends JPanel implements MouseListener, MouseMotionLis
   private PlayerShip player;
   private PlayerShip2 player2;
   private boolean is2play;
-  private ArrayList enemy;
+  private ArrayList<EnemyShip> enemy;
   private Boss boss;
 
   // Chance for normal enemy to fire a laser
   private int enChance;
 
   // Lasers ArrayList
-  private ArrayList lasers;
-  private ArrayList enlasers;
+  private ArrayList<Laser> lasers;
+  private ArrayList<Laser> enlasers;
 
   // Dropped Objects ArrayList
-  private ArrayList dropObject;
+  private ArrayList<Powerup> dropObject;
 
   // Stars Array
-  private ArrayList stars;
+  private ArrayList<Star> stars;
 
   // Armor variable
   private int armorvalue;
@@ -110,11 +114,11 @@ public class Environment extends JPanel implements MouseListener, MouseMotionLis
     player2 = new PlayerShip2(500, 550, this);
 
     // Create new enemy, laser, star, and powerups ArrayLists
-    enemy = new ArrayList();
-    lasers = new ArrayList();
-    enlasers = new ArrayList();
-    dropObject = new ArrayList();
-    stars = new ArrayList();
+    enemy = new ArrayList<EnemyShip>();
+    lasers = new ArrayList<Laser>();
+    enlasers = new ArrayList<Laser>();
+    dropObject = new ArrayList<Powerup>();
+    stars = new ArrayList<Star>();
 
     // Create both counter Classes
     counter = new Counter();
@@ -149,13 +153,13 @@ public class Environment extends JPanel implements MouseListener, MouseMotionLis
     // Draw the background stars
     for(int i=0; i < stars.size();i++)
     {
-      g2.drawImage(((Star)stars.get(i)).getSprite().getImage(), ((Star)stars.get(i)).getPositionX(), ((Star)stars.get(i)).getPositionY(), null);
+      g2.drawImage(stars.get(i).getSprite().getImage(), stars.get(i).getPositionX(), stars.get(i).getPositionY(), null);
     }
 
     // Draw the lasers
     for(int i=0; i < lasers.size();i++)
     {
-      g2.drawImage(((Laser)lasers.get(i)).getSprite().getImage(), ((Laser)lasers.get(i)).getPositionX(), ((Laser)lasers.get(i)).getPositionY(), null);
+      g2.drawImage(lasers.get(i).getSprite().getImage(), lasers.get(i).getPositionX(), lasers.get(i).getPositionY(), null);
     }
 
     // Draw the second player ship
@@ -173,19 +177,19 @@ public class Environment extends JPanel implements MouseListener, MouseMotionLis
     //Draw enemy lasers
     for(int i=0; i < enlasers.size();i++)
     {
-      g2.drawImage(((Laser)enlasers.get(i)).getSprite().getImage(), ((Laser)enlasers.get(i)).getPositionX(), ((Laser)enlasers.get(i)).getPositionY(), null);
+      g2.drawImage(enlasers.get(i).getSprite().getImage(), enlasers.get(i).getPositionX(), enlasers.get(i).getPositionY(), null);
     }
 
     //Draw the enemy ships
     for(int i=0; i < enemy.size();i++)
     {
-      g2.drawImage(((EnemyShip)enemy.get(i)).getSprite().getImage(), ((EnemyShip)enemy.get(i)).getPositionX(), ((EnemyShip)enemy.get(i)).getPositionY(), null);
+      g2.drawImage(enemy.get(i).getSprite().getImage(), enemy.get(i).getPositionX(), enemy.get(i).getPositionY(), null);
     }
 
     //Draw the powerups
     for(int i=0; i < dropObject.size();i++)
     {
-      g2.drawImage(((Powerup)dropObject.get(i)).getSprite().getImage(), ((Powerup)dropObject.get(i)).getPositionX(), ((Powerup)dropObject.get(i)).getPositionY(), null);
+      g2.drawImage(dropObject.get(i).getSprite().getImage(), dropObject.get(i).getPositionX(), dropObject.get(i).getPositionY(), null);
     }
 
     // Check if player 1 is Alive
