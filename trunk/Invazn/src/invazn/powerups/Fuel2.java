@@ -8,7 +8,7 @@
  * Contributors:
  *     IBM Corporation - initial API and implementation
  *******************************************************************************/
-package powerups;
+package invazn.powerups;
 
 import invazn.Powerup;
 
